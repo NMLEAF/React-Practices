@@ -1,0 +1,47 @@
+.accordion {
+  margin: 100px auto;
+  width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  row-gap: 32px;
+  column-gap: 24px;
+  cursor: pointer;
+}
+
+.open {
+  border-top: 4px solid #087f5b;
+}
+
+.open .question,
+.open .number {
+  color: #087f5b;
+}
+
+.answer {
+  grid-column: 2;
+  display: none;
+}
+
+.number,
+.question {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.number {
+  color: #ced4da;
+}
+
+.answer p {
+  font-size: 18px;
+}
