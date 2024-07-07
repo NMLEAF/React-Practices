@@ -21,8 +21,9 @@ function Form({ onAddItems }) {
   return (
     <>
       <form className="add-form" onSubmit={handleSubmit}>
-        <h3>What do you want for your 😍 trip? </h3>
+        <h3 className="h3-far-away">What do you want for your 😍 trip? </h3>
         <select
+          className="select-far"
           value={quantity}
           onChange={(e) => setQuantity(Number(e.target.value))}
         >
@@ -33,12 +34,13 @@ function Form({ onAddItems }) {
           ))}
         </select>
         <input
+          className="input-far"
           type="text"
           placeholder="Item..."
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button>Add</button>
+        <button className="button-far">Add</button>
       </form>
     </>
   );

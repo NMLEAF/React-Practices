@@ -36,13 +36,19 @@ function PackingList({ items, onDeleteItem, onToggleItem, handleClearList }) {
         </ul>
 
         <div className="actions">
-          <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <select
+            className="select-far"
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+          >
             <option value="input">Sort by input order</option>
             <option value="description">Sort by description</option>
             <option value="packed">Sort by packed status </option>
             <option value="quantity">Sort by quantity</option>
           </select>
-          <button onClick={handleClearList}>Clear list</button>
+          <button className="button-far" onClick={handleClearList}>
+            Clear list
+          </button>
         </div>
       </div>
     </>

@@ -25,7 +25,7 @@ body {
   font-weight: 500;
 }
 
-.app {
+.app-far-away {
   width: 100%;
   height: 100vh;
   display: grid;
@@ -53,14 +53,14 @@ h1 {
   gap: 0.8rem;
 }
 
-h3 {
+.h3-far-away {
   margin-right: 1.6rem;
   font-size: 2.4rem;
 }
 
-button,
-select,
-input {
+.button-far,
+.select-far,
+.input-far {
   background-color: #ffebb3;
   color: #5a3e2b;
   font-family: inherit;
@@ -72,7 +72,7 @@ input {
   cursor: pointer;
 }
 
-.add-form button {
+.add-form .button-far {
   text-transform: uppercase;
   background-color: #76c7ad;
 }
@@ -89,8 +89,8 @@ input {
   align-items: center;
 }
 
-.actions button,
-.list select {
+.actions .button-far,
+.list .select-far {
   text-transform: uppercase;
   padding: 0.8rem 2.4rem;
   font-size: 1.4rem;
@@ -116,13 +116,13 @@ input {
   gap: 1.2rem;
 }
 
-input[type="checkbox"] {
+.input-far[type="checkbox"] {
   height: 2rem;
   width: 2rem;
   accent-color: #e5771f;
 }
 
-.list li button {
+.list li .button-far {
   cursor: pointer;
   background: none;
   border: none;

@@ -1,7 +1,7 @@
 const Item = ({ item, onDeleteItem, onToggleItem }) => {
   return (
     <li>
-      <input
+      <input className="input-far"
         type="checkbox"
         value={item.packed}
         onChange={() => {
@@ -11,7 +11,9 @@ const Item = ({ item, onDeleteItem, onToggleItem }) => {
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}
       </span>
-      <button onClick={() => onDeleteItem(item.id)}>❌</button>
+      <button className="button-far" onClick={() => onDeleteItem(item.id)}>
+        ❌
+      </button>
     </li>
   );
 };
