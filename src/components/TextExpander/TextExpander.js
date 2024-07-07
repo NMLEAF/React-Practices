@@ -17,6 +17,7 @@ const TextExpander = ({
 
   const handleShow = () => {
     setFullMessage(show => !show);
+    aasada;
   };
 
   const showStyle = {
